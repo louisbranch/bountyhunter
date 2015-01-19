@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour {
 	public LayerMask impassibleLayer;
 	public float checkerRadius = 0.05f;
 
-	private bool facingRight = false;
+	private bool facingRight = true;
 
 	private bool moveTop = true;
 	private bool moveBack = true;
@@ -31,14 +31,13 @@ public class PlayerControl : MonoBehaviour {
 		float vMove = Input.GetAxis("Vertical");
 
 		moveTop = !Physics2D.OverlapCircle(top.position, checkerRadius, impassibleLayer);
-		moveBack = !Physics2D.OverlapCircle(back.position, checkerRadius, impassibleLayer);
 		moveBot = !Physics2D.OverlapCircle(bottom.position, checkerRadius, impassibleLayer);
 		moveFront = !Physics2D.OverlapCircle(front.position, checkerRadius, impassibleLayer);
+		moveBack = !Physics2D.OverlapCircle(back.position, checkerRadius, impassibleLayer);
 
 
 		if (hMove > 0) {
-			Debug.Log (moveBack);
-			if (moveBack) {
+			if (moveFront) {
 				transform.Translate(Vector2.right * speed * Time.deltaTime);
 			}
 
@@ -46,7 +45,7 @@ public class PlayerControl : MonoBehaviour {
 				Flip();
 			}
 		} else if (hMove < 0) {
-			if (moveFront) {
+			if (moveBack) {
 				transform.Translate(-Vector2.right * speed * Time.deltaTime);
 			}
 			if (facingRight) {
