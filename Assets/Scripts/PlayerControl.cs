@@ -9,36 +9,36 @@ public class PlayerControl : MonoBehaviour {
 
 	private bool facingRight = false;
 
-	private bool moveN = true;
-	private bool moveE = true;
-	private bool moveS = true;
-	private bool moveW = true;
+	private bool moveTop = true;
+	private bool moveBack = true;
+	private bool moveBot = true;
+	private bool moveFront = true;
 
-	Transform north;
-	Transform east;
-	Transform south;
-	Transform west;
+	Transform top;
+	Transform back;
+	Transform bottom;
+	Transform front;
 
 	private void Awake() {
-		north = transform.Find("North");
-		east = transform.Find("East");
-		south = transform.Find("South");
-		west = transform.Find("West");
+		top = transform.Find("Top");
+		back = transform.Find("Back");
+		bottom = transform.Find("Bottom");
+		front = transform.Find("Front");
 	}
 	
 	private void Update () {
 		float hMove = Input.GetAxis("Horizontal");
 		float vMove = Input.GetAxis("Vertical");
 
-		moveN = !Physics2D.OverlapCircle(north.position, checkerRadius, impassibleLayer);
-		moveE = !Physics2D.OverlapCircle(east.position, checkerRadius, impassibleLayer);
-		moveS = !Physics2D.OverlapCircle(south.position, checkerRadius, impassibleLayer);
-		moveW = !Physics2D.OverlapCircle(west.position, checkerRadius, impassibleLayer);
+		moveTop = !Physics2D.OverlapCircle(top.position, checkerRadius, impassibleLayer);
+		moveBack = !Physics2D.OverlapCircle(back.position, checkerRadius, impassibleLayer);
+		moveBot = !Physics2D.OverlapCircle(bottom.position, checkerRadius, impassibleLayer);
+		moveFront = !Physics2D.OverlapCircle(front.position, checkerRadius, impassibleLayer);
 
 
 		if (hMove > 0) {
-			Debug.Log (moveE);
-			if (moveE) {
+			Debug.Log (moveBack);
+			if (moveBack) {
 				transform.Translate(Vector2.right * speed * Time.deltaTime);
 			}
 
@@ -46,7 +46,7 @@ public class PlayerControl : MonoBehaviour {
 				Flip();
 			}
 		} else if (hMove < 0) {
-			if (moveW) {
+			if (moveFront) {
 				transform.Translate(-Vector2.right * speed * Time.deltaTime);
 			}
 			if (facingRight) {
@@ -54,9 +54,9 @@ public class PlayerControl : MonoBehaviour {
 			}
 		}
 
-		if (vMove > 0 && moveN) {
+		if (vMove > 0 && moveTop) {
 			transform.Translate(Vector2.up * speed * Time.deltaTime);
-		} else if (vMove < 0 && moveS) {
+		} else if (vMove < 0 && moveBot) {
 			transform.Translate(-Vector2.up * speed * Time.deltaTime);
 		}
 	}
@@ -65,6 +65,9 @@ public class PlayerControl : MonoBehaviour {
 		Vector3 scale = transform.localScale;
 		scale.x *= -1;
 		transform.localScale = scale;
+		Transform swap = front;
+		front = back;
+		back = swap;
 		facingRight = !facingRight;
 	}
 }
