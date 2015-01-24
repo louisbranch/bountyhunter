@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21240962}
   - 61: {fileID: 6140962}
   - 114: {fileID: 11451596}
+  - 50: {fileID: 5095706}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -30,6 +31,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5095706
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140962}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6140962
 BoxCollider2D:
   m_ObjectHideFlags: 1
