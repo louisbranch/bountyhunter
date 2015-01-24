@@ -3,7 +3,7 @@
 --- !u!78 &1
 TagManager:
   tags:
-  - Weapon
+  - Fire
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -50,19 +50,19 @@ TagManager:
     userID: 2
     uniqueID: 629546685
     locked: 0
-  - name: FX
-    userID: 5
-    uniqueID: 476058703
-    locked: 0
   - name: Objects
     userID: 4
     uniqueID: 3991454355
+    locked: 0
+  - name: Enemies
+    userID: 6
+    uniqueID: 3965248763
     locked: 0
   - name: Player
     userID: 3
     uniqueID: 3276302873
     locked: 0
-  - name: Enemies
-    userID: 6
-    uniqueID: 3965248763
+  - name: FX
+    userID: 5
+    uniqueID: 476058703
     locked: 0
