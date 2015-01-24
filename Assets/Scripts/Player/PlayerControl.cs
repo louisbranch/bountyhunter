@@ -29,18 +29,18 @@ public class PlayerControl : MonoBehaviour {
 	private void Update () {
 		float hMove = Input.GetAxis("Horizontal");
 		float vMove = Input.GetAxis("Vertical");
-
+		
 		moveTop = !Physics2D.OverlapCircle(top.position, checkerRadius, impassibleLayer);
 		moveBot = !Physics2D.OverlapCircle(bottom.position, checkerRadius, impassibleLayer);
 		moveFront = !Physics2D.OverlapCircle(front.position, checkerRadius, impassibleLayer);
 		moveBack = !Physics2D.OverlapCircle(back.position, checkerRadius, impassibleLayer);
-
-
+		
+		
 		if (hMove > 0) {
 			if (moveFront) {
 				transform.Translate(Vector2.right * speed * Time.deltaTime);
 			}
-
+			
 			if (!facingRight) { 
 				Flip();
 			}
@@ -52,7 +52,7 @@ public class PlayerControl : MonoBehaviour {
 				Flip();
 			}
 		}
-
+		
 		if (vMove > 0 && moveTop) {
 			transform.Translate(Vector2.up * speed * Time.deltaTime);
 		} else if (vMove < 0 && moveBot) {
