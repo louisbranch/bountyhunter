@@ -1576,7 +1576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  attackSpeed: .5
+  fireRate: .5
   projectileSpeed: 1
 --- !u!61 &1415771618
 BoxCollider2D:
@@ -1729,6 +1729,14 @@ Prefab:
     - target: {fileID: 11476842, guid: f98425168831a412598603e04f40dc8d, type: 2}
       propertyPath: projectileSpeed
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476842, guid: f98425168831a412598603e04f40dc8d, type: 2}
+      propertyPath: attackSpeed
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476842, guid: f98425168831a412598603e04f40dc8d, type: 2}
+      propertyPath: fireRate
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f98425168831a412598603e04f40dc8d, type: 2}

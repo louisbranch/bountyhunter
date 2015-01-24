@@ -26,7 +26,7 @@ public class PlayerInventory : MonoBehaviour {
 			weapon = coll.gameObject;
 			anim.CrossFade("SoldierW" + coll.name, 0f);
 			Weapon attrs = coll.GetComponent<Weapon>();
-			fireRate = attrs.attackSpeed;
+			fireRate = attrs.fireRate;
 			speed = attrs.projectileSpeed;
 			coll.gameObject.renderer.enabled = false;
 			break;
