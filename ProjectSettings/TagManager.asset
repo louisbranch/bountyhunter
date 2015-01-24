@@ -62,3 +62,7 @@ TagManager:
     userID: 3
     uniqueID: 3276302873
     locked: 0
+  - name: Enemies
+    userID: 6
+    uniqueID: 3965248763
+    locked: 0

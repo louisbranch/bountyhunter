@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: WorldBuildBlocks (90)
+  m_Name: DoorSlamControl
   serializedVersion: 2
   m_AnimatorParameters: []
   m_AnimatorLayers:
