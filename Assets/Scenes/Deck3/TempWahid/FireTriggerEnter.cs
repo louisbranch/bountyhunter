@@ -16,13 +16,7 @@ public class FireTriggerEnter : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other){
 		Debug.Log ("hit fire");
 		if (other.tag=="Fire"){
-			anim.SetBool("isOnFire", true);
+			anim.SetTrigger("isOnFire");
 		} 
 }
-	void OnTriggerExit2D(Collider2D other){
-		Debug.Log("exit fire");
-		if (other.tag=="Fire"){
-			anim.SetBool("isOnFire", false);
-		} 
-	}
 }
