@@ -36,7 +36,9 @@ public class PlayerInventory : MonoBehaviour {
 	private void Update() {
 		if (Input.GetButton("Fire1") && armed && Time.time > nextFire) {
 			nextFire = Time.time + fireRate;
-			GameObject bullet = (GameObject)Instantiate(projectile, transform.position, transform.rotation);
+			Vector3 position = transform.position;
+			position.y -= 0.03f;
+			GameObject bullet = (GameObject)Instantiate(projectile, position, Quaternion.identity);
 			Projectile p = bullet.GetComponent<Projectile>();
 			p.speed = transform.localScale.x * speed * -1;
 		}
