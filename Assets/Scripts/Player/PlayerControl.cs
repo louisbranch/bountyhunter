@@ -14,12 +14,15 @@ public class PlayerControl : MonoBehaviour {
 	private bool moveBot = true;
 	private bool moveFront = true;
 
+	Animator anim;
+
 	Transform top;
 	Transform back;
 	Transform bottom;
 	Transform front;
 
 	private void Awake() {
+		anim=GetComponent<Animator>();
 		top = transform.Find("Top");
 		back = transform.Find("Back");
 		bottom = transform.Find("Bottom");
@@ -29,7 +32,11 @@ public class PlayerControl : MonoBehaviour {
 	private void Update () {
 		float hMove = Input.GetAxis("Horizontal");
 		float vMove = Input.GetAxis("Vertical");
-		
+
+		if (hMove==0 && vMove==0){
+			anim.SetBool("move", false);
+		} else anim.SetBool("move",true);
+
 		moveTop = !Physics2D.OverlapCircle(top.position, checkerRadius, impassibleLayer);
 		moveBot = !Physics2D.OverlapCircle(bottom.position, checkerRadius, impassibleLayer);
 		moveFront = !Physics2D.OverlapCircle(front.position, checkerRadius, impassibleLayer);
@@ -70,3 +77,4 @@ public class PlayerControl : MonoBehaviour {
 		facingRight = !facingRight;
 	}
 }
+
