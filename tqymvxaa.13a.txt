@@ -1,0 +1,27 @@
+﻿test
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	deleted:    Assets/Scenes/Deck3/TempChris/Deck3Door.controller
+#	deleted:    Assets/Scenes/Deck3/TempChris/Deck3Door.controller.meta
+#	deleted:    Assets/Scenes/Deck3/TempChris/DoorTrigger.cs.meta
+#	deleted:    Assets/Scenes/Deck3/TempChris/GreenDoor.anim
+#	deleted:    Assets/Scenes/Deck3/TempChris/GreenDoor.anim.meta
+#	deleted:    Assets/Scenes/Deck3/TempChris/OpenDoor.anim
+#	deleted:    Assets/Scenes/Deck3/TempChris/OpenDoor.anim.meta
+#	renamed:    Assets/Scenes/Deck3/TempChris/DoorTrigger.cs -> Assets/Scripts/Items/DoorTrigger.cs
+#
+# Untracked files:
+#	Assets/Animations/PrefabAnims/Deck3Door.controller
+#	Assets/Animations/PrefabAnims/Deck3Door.controller.meta
+#	Assets/Animations/PrefabAnims/GreenDoor.anim
+#	Assets/Animations/PrefabAnims/GreenDoor.anim.meta
+#	Assets/Animations/PrefabAnims/OpenDoor.anim
+#	Assets/Animations/PrefabAnims/OpenDoor.anim.meta
+#	Assets/Scripts/Items/DoorTrigger.cs.meta
+#
+
