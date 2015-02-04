@@ -1,66 +1,66 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &181516
+--- !u!1 &177102
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 481516}
-  - 212: {fileID: 21281516}
-  - 61: {fileID: 6181516}
+  - 4: {fileID: 477102}
+  - 212: {fileID: 21277102}
+  - 61: {fileID: 6177102}
   m_Layer: 14
-  m_Name: Damaged Bed
+  m_Name: Left & Right Mid Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &481516
+--- !u!4 &477102
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181516}
-  m_LocalRotation: {x: 0, y: 0, z: -.707106829, w: .707106829}
-  m_LocalPosition: {x: -.938000023, y: .940999985, z: 0}
+  m_GameObject: {fileID: 177102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.36600006, y: .185000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6181516
+--- !u!61 &6177102
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181516}
+  m_GameObject: {fileID: 177102}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .196011469, y: .424535751}
-  m_Center: {x: -.00478160381, y: -.00286883209}
---- !u!212 &21281516
+  m_Size: {x: .239999995, y: .239999995}
+  m_Center: {x: 0, y: 0}
+--- !u!212 &21277102
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181516}
+  m_GameObject: {fileID: 177102}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 67237d493ed8e45719efa59e9472a7ef, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 3991454355
+  m_SortingLayerID: 629546685
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6d0167dd58e18b444b4d5330d908921c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d962d93f86a6249888c9bb8e1460f808, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -71,6 +71,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 181516}
+  m_RootGameObject: {fileID: 177102}
   m_IsPrefabParent: 1
   m_IsExploded: 1
