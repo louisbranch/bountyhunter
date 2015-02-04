@@ -23,12 +23,16 @@ public class PlayerInventory : MonoBehaviour {
 	private void OnTriggerEnter2D(Collider2D coll) {
 		switch (coll.tag) {
 			case "Weapon":
+			if (weapon != null) {
+				Destroy(weapon);
+			}
 			weapon = coll.gameObject;
 			anim.CrossFade("SoldierW" + coll.name, 0f);
 			Weapon attrs = coll.GetComponent<Weapon>();
 			fireRate = attrs.fireRate;
 			speed = attrs.projectileSpeed;
 			coll.gameObject.renderer.enabled = false;
+			coll.gameObject.transform.parent = transform;
 			break;
 		}
 	}
