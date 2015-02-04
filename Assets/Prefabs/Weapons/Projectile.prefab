@@ -14,7 +14,7 @@ GameObject:
   - 50: {fileID: 5095706}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +54,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 140962}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Size: {x: .0882581174, y: .0512479544}
   m_Center: {x: .0018505156, y: .00185054541}
 --- !u!114 &11451596
