@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HitPointsSystem : MonoBehaviour {
+public class HitPointsSystemTurret : MonoBehaviour {
 	Animator anim;
 	public GameObject other;
 	public float health;
@@ -15,7 +15,6 @@ public class HitPointsSystem : MonoBehaviour {
 			if (health <= 0) {
 				//Destroy(gameObject);
 				anim.SetBool("destroyed", true);
-				GameObject foo = GameObject.Find ("CrawlTurret");
 				other.GetComponent<TurretScript>().enabled = false;
 			}
 			break;
