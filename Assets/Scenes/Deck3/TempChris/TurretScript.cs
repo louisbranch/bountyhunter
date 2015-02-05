@@ -5,15 +5,20 @@ public class TurretScript : MonoBehaviour {
 	public GameObject projectile;
 	private float nextFire = 0f;
 	private float fireRate;
-	private float speed=10f;
+	private float speed = 10f;
+	public bool entry = false;
 	// Use this for initialization
-	void Start () {
-	
+
+	void OnTriggerStay2D (Collider2D fireZone) {
+		if (fireZone.tag == "Player"){
+			entry = true;
+		} else { 
+			entry = false;
+		}
 	}
-	
 	// Update is called once per frame
 	void Update () {
-		if ( Time.time > nextFire) {
+		if ( Time.time > nextFire && entry) {
 			nextFire = Time.time + fireRate;
 			Vector3 position = transform.position;
 			position.y -= 0.03f;
