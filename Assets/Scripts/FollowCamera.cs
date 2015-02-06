@@ -20,6 +20,5 @@ public class FollowCamera : MonoBehaviour {
 				dampTime -= 0.1f;
 			}
 		}
-		
 	}
 }
