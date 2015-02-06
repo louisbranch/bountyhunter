@@ -3,13 +3,12 @@ using System.Collections;
 
 public class WallExplosion : MonoBehaviour {
 
-	public float totalTime = 60f;
-	private float goalTime = 0f;
-	
+	public float totalTime = 10f;
+
 	// Update is called once per frame
 	void Update () {
 		totalTime -= Time.deltaTime;
-		if (totalTime <= goalTime) {
+		if (totalTime <= 0) {
 			Destroy(gameObject);
 				}
 	}

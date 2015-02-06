@@ -4,7 +4,7 @@ using System.Collections;
 public class TurretScript : MonoBehaviour {
 	public GameObject projectile;
 	private float nextFire = 0f;
-	private float fireRate;
+	private float fireRate = 0f;
 	private float speed = 10f;
 	public bool entry = false;
 	// Use this for initialization
