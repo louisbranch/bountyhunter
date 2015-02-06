@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FollowCamera : MonoBehaviour {
 	
-	public float dampTime = 1f;
+	[HideInInspector]public float dampTime = 1f;
 	private Vector3 velocity = Vector3.zero;
 	public Transform target;
 

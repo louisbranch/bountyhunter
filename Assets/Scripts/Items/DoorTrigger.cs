@@ -9,9 +9,15 @@ public class DoorTrigger : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D(Collider2D other) {
-		if (other.tag == "Player"){
-			anim.SetTrigger("OpenDoor");
+			
+		if (other.tag == "Player") {
+			anim.SetTrigger ("OpenDoor");
 			//collider.enabled = false;
-		} 
+			} 
+			
+		// Alternative to Opening Door
+		if (Input.GetKey (KeyCode.E)) {
+			anim.SetTrigger ("OpenDoor");
+				}
 	}
 }
