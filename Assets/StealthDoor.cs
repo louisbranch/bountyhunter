@@ -4,10 +4,18 @@ using System.Collections;
 public class StealthDoor : MonoBehaviour {
 
 	public GameObject OpenDoor;
-	
-	void Update(){
-			if (Input.GetKey (KeyCode.E)) {
-			OpenDoor.SetActive(false);
-				}
+	public GameObject ClosedDoor;
+
+	void Awake(){
+		OpenDoor.SetActive (false);
+		ClosedDoor.SetActive (true);
+		}
+
+	void OnTriggerEnter2D(Collider2D coll)
+	{
+		if (Input.GetKey (KeyCode.E)) {
+				ClosedDoor.SetActive (false);
+				OpenDoor.SetActive (true);
 		}
 	}
+}
