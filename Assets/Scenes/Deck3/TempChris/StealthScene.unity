@@ -8202,7 +8202,6 @@ GameObject:
   - 4: {fileID: 602514356}
   - 212: {fileID: 602514357}
   - 61: {fileID: 602514359}
-  - 114: {fileID: 602514358}
   m_Layer: 14
   m_Name: Broken Screen
   m_TagString: Untagged
@@ -8245,18 +8244,6 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 589da71928e597d4abf5413fa1592328, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &602514358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 602514355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d15cc9f677b19944587bd50e110c16bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalTime: 10
 --- !u!61 &602514359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27134,7 +27121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15cc9f677b19944587bd50e110c16bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 2
+  totalTime: 5
 --- !u!1 &2097864411
 GameObject:
   m_ObjectHideFlags: 0
