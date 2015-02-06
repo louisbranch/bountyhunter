@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21238832}
   - 61: {fileID: 6138830}
   - 61: {fileID: 6138832}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Green Bed (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
