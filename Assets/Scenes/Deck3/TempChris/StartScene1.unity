@@ -3662,6 +3662,7 @@ GameObject:
   - 4: {fileID: 862451372}
   - 212: {fileID: 862451371}
   - 61: {fileID: 862451370}
+  - 114: {fileID: 862451373}
   m_Layer: 10
   m_Name: Green Floor
   m_TagString: FloorTrigger
@@ -3716,6 +3717,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 662498807}
   m_RootOrder: 0
+--- !u!114 &862451373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 862451369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae661f1b59c7164aa2bc4bcf2966d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &872893563
 GameObject:
   m_ObjectHideFlags: 0
