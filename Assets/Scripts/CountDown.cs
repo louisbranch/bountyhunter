@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WallExplosion : MonoBehaviour {
+public class CountDown : MonoBehaviour {
 
-	public float totalTime = 10f;
+	/// <summary>
+	/// Count Down Script to destroy objects
+	/// </summary>
 
-	// Update is called once per frame
+	public float totalTime = 0f;
+	
 	void Update () {
 		totalTime -= Time.deltaTime;
 		if (totalTime <= 0) {
