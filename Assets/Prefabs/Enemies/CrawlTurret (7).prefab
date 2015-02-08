@@ -28,10 +28,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 442730}
   - 212: {fileID: 21242730}
-  - 61: {fileID: 6151166}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Red Light
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.32099998, y: .118000001, z: 0}
+  m_LocalPosition: {x: 1.27516317, y: .228862852, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 442898}
@@ -156,7 +155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.151700005, y: .0289999992, z: 0}
+  m_LocalPosition: {x: -.144800007, y: -.000199999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 408164}
@@ -221,7 +220,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.46799755, y: .187913775}
-  m_Center: {x: -.43456912, y: -.0133313388}
+  m_Center: {x: -.43456912, y: .00400000019}
 --- !u!61 &6142898
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -233,17 +232,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .239999995, y: .162196398}
   m_Center: {x: 0, y: .00092625618}
---- !u!61 &6151166
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142730}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: .240000054, y: .240000054}
-  m_Center: {x: .230000004, y: 1.63999999}
 --- !u!95 &9569384
 Animator:
   serializedVersion: 3

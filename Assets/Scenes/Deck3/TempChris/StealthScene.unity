@@ -6376,11 +6376,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6136554, guid: b5402378254491043a975497c21838f1, type: 2}
       propertyPath: m_Center.x
-      value: .040308062
+      value: .0403080583
       objectReference: {fileID: 0}
     - target: {fileID: 6136554, guid: b5402378254491043a975497c21838f1, type: 2}
       propertyPath: m_Center.y
-      value: -.29026866
+      value: -.290268689
       objectReference: {fileID: 0}
     - target: {fileID: 6136554, guid: b5402378254491043a975497c21838f1, type: 2}
       propertyPath: m_Size.x
@@ -6404,11 +6404,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 442898, guid: b5402378254491043a975497c21838f1, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -.707319319
+      value: .707319319
       objectReference: {fileID: 0}
     - target: {fileID: 442898, guid: b5402378254491043a975497c21838f1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .706894279
+      value: -.706894159
       objectReference: {fileID: 0}
     - target: {fileID: 442898, guid: b5402378254491043a975497c21838f1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -6421,6 +6421,22 @@ Prefab:
     - target: {fileID: 6136554, guid: b5402378254491043a975497c21838f1, type: 2}
       propertyPath: m_Size.y
       value: .777048886
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492356, guid: b5402378254491043a975497c21838f1, type: 2}
+      propertyPath: firingAngle
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 108164, guid: b5402378254491043a975497c21838f1, type: 2}
+      propertyPath: m_Name
+      value: CrawlTurret (7)-uniqueForOnlyThisRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 442898, guid: b5402378254491043a975497c21838f1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442898, guid: b5402378254491043a975497c21838f1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5402378254491043a975497c21838f1, type: 2}
@@ -13424,7 +13440,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 934447534}
   - 212: {fileID: 934447536}
-  - 61: {fileID: 934447535}
   m_Layer: 0
   m_Name: Red Light
   m_TagString: Untagged
@@ -13444,18 +13459,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1921094431}
   m_RootOrder: 1
---- !u!61 &934447535
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6151166, guid: b5402378254491043a975497c21838f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 472923977}
-  m_GameObject: {fileID: 934447533}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: .235057399, y: .96411556}
-  m_Center: {x: -.00249834522, y: 1.28287983}
 --- !u!212 &934447536
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25761,7 +25764,7 @@ Transform:
   m_PrefabParentObject: {fileID: 442898, guid: b5402378254491043a975497c21838f1, type: 2}
   m_PrefabInternal: {fileID: 472923977}
   m_GameObject: {fileID: 1917731914}
-  m_LocalRotation: {x: 0, y: 0, z: -.707319319, w: .706894279}
+  m_LocalRotation: {x: 0, y: 0, z: .707319319, w: -.706894159}
   m_LocalPosition: {x: -.151700035, y: .029000029, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -25817,7 +25820,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: .201406941, y: .777048886}
-  m_Center: {x: .040308062, y: -.29026866}
+  m_Center: {x: .0403080583, y: -.290268689}
 --- !u!114 &1917731919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25845,7 +25848,7 @@ GameObject:
   - 61: {fileID: 1921094433}
   - 95: {fileID: 1921094432}
   m_Layer: 0
-  m_Name: CrawlTurret (7)
+  m_Name: CrawlTurret (7)-uniqueForOnlyThisRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
