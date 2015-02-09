@@ -3662,7 +3662,6 @@ GameObject:
   - 4: {fileID: 862451372}
   - 212: {fileID: 862451371}
   - 61: {fileID: 862451370}
-  - 114: {fileID: 862451373}
   m_Layer: 10
   m_Name: Green Floor
   m_TagString: FloorTrigger
@@ -3717,17 +3716,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 662498807}
   m_RootOrder: 0
---- !u!114 &862451373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 862451369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bae661f1b59c7164aa2bc4bcf2966d63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &872893563
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,6 +5039,7 @@ GameObject:
   - 4: {fileID: 1132301028}
   - 212: {fileID: 1132301030}
   - 61: {fileID: 1132301029}
+  - 114: {fileID: 1132301031}
   m_Layer: 0
   m_Name: Wall on Fire
   m_TagString: FloorTrigger
@@ -5105,6 +5094,17 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8cd5627fdc5160342bfef34e294ad708, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1132301031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132301027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e17159db154034985140e3c4bf56a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1132736150
 GameObject:
   m_ObjectHideFlags: 0
@@ -6715,7 +6715,7 @@ Transform:
   m_PrefabInternal: {fileID: 1742249975}
   m_GameObject: {fileID: 1525260084}
   m_LocalRotation: {x: 0, y: 0, z: -.623489261, w: .78183192}
-  m_LocalPosition: {x: -.611000001, y: .238000005, z: 0}
+  m_LocalPosition: {x: -.620000005, y: .229000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1244132872}
@@ -6731,7 +6731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0b0865e84e44e6790b108ad78acf51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 30
 --- !u!1 &1527672834
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,11 +7673,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 479494, guid: e0ea1ccac23236c4a8ed3c1128758b09, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.611000001
+      value: -.620000005
       objectReference: {fileID: 0}
     - target: {fileID: 479494, guid: e0ea1ccac23236c4a8ed3c1128758b09, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .238000005
+      value: .229000002
       objectReference: {fileID: 0}
     - target: {fileID: 479494, guid: e0ea1ccac23236c4a8ed3c1128758b09, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9004,7 +9004,6 @@ GameObject:
   - 95: {fileID: 2064643231}
   - 114: {fileID: 2064643237}
   - 50: {fileID: 2064643236}
-  - 114: {fileID: 2064643238}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -9126,17 +9125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 140962, guid: d0f5eb7166176400582e1755a0829da5, type: 2}
---- !u!114 &2064643238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2064643230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7e17159db154034985140e3c4bf56a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2087669622
 GameObject:
   m_ObjectHideFlags: 0

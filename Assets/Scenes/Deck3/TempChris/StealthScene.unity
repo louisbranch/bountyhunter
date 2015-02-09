@@ -13440,9 +13440,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 934447534}
   - 212: {fileID: 934447536}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Red Light
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20164,6 +20164,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1518691321}
+  - 114: {fileID: 1518691322}
   m_Layer: 0
   m_Name: Opening Door
   m_TagString: Untagged
@@ -20185,6 +20186,20 @@ Transform:
   - {fileID: 1435565747}
   m_Father: {fileID: 1677049415}
   m_RootOrder: 3
+--- !u!114 &1518691322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518691320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e499ba0a3f99d54faf9267bec72c16a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OpenDoor: {fileID: 1435565745}
+  ClosedDoor: {fileID: 1655400850}
+  CountdownTime: 30
 --- !u!1001 &1525357890
 Prefab:
   m_ObjectHideFlags: 0
@@ -21754,7 +21769,6 @@ GameObject:
   - 4: {fileID: 1655400853}
   - 212: {fileID: 1655400852}
   - 61: {fileID: 1655400851}
-  - 114: {fileID: 1655400854}
   - 50: {fileID: 1655400855}
   m_Layer: 14
   m_Name: Door
@@ -21810,19 +21824,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1518691321}
   m_RootOrder: 0
---- !u!114 &1655400854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1655400850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e499ba0a3f99d54faf9267bec72c16a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OpenDoor: {fileID: 1435565745}
-  ClosedDoor: {fileID: 1655400850}
 --- !u!50 &1655400855
 Rigidbody2D:
   m_ObjectHideFlags: 0
