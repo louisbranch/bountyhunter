@@ -9,7 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 484284}
   - 212: {fileID: 21284284}
-  m_Layer: 12
+  - 61: {fileID: 6164520}
+  m_Layer: 14
   m_Name: Door 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,11 +24,22 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.359665006, y: .359463722, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -.00499999989, y: -1.12399995, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6164520
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184284}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .239999995, y: .239999995}
+  m_Center: {x: 0, y: 0}
 --- !u!212 &21284284
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -46,9 +58,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 3991454355
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fdf626e0e39c1b74dbb1ea00010842dd, type: 3}
+  m_SortingLayerID: 629546685
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 17d48437b473df642a920694e06fbe40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
