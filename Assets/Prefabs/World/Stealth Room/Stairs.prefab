@@ -9,7 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 472980}
   - 212: {fileID: 21272980}
-  m_Layer: 10
+  - 114: {fileID: 11443368}
+  - 61: {fileID: 6167842}
+  m_Layer: 8
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,11 +25,33 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0208776, y: -.425376862, z: 0}
+  m_LocalPosition: {x: .0147537589, y: 1.42782152, z: -.203125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6167842
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172980}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .239999995, y: .239999995}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &11443368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45161b123409cd34db1be76a5236009a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21272980
 SpriteRenderer:
   m_ObjectHideFlags: 1
