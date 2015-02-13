@@ -10,7 +10,9 @@ GameObject:
   - 4: {fileID: 460040}
   - 212: {fileID: 21260040}
   - 61: {fileID: 6160040}
-  m_Layer: 10
+  - 50: {fileID: 5070286}
+  - 114: {fileID: 11470286}
+  m_Layer: 14
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,11 +26,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.77800012, y: -1.73899996, z: 0}
+  m_LocalPosition: {x: -.945250034, y: .467819989, z: -.203130007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5070286
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160040}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6160040
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -37,9 +54,21 @@ BoxCollider2D:
   m_GameObject: {fileID: 160040}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .239999995, y: .239999995}
-  m_Center: {x: 0, y: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .239999995, y: .243831515}
+  m_Center: {x: 0, y: -.00191575289}
+--- !u!114 &11470286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e499ba0a3f99d54faf9267bec72c16a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NearDoor: 0
 --- !u!212 &21260040
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -59,7 +88,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 629546685
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2cf7a85d402c5a74ab4ee5275bcbbe62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
